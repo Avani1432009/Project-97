@@ -22,5 +22,13 @@ if guess == number:
     print("Congratulation You Won!!!")
     break
 
+elif guess < number:
+    print("Your guess was too low: guess a number higher than", guess)
+
+else:
+    print("Your guess was too high: guess a number lower than", guess)
+    
+chances += 1 
+
 if not chances < 5:
-    print("You Lose!!! the number is",number)
+    print("You lose!!! the number is: ", number)
